@@ -1,0 +1,401 @@
+/* ------ Спецификация ------ */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #6c7279;
+	padding: 0;
+	letter-spacing: 0em;
+	margin: 0;
+	font-size: 14px;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+p {
+	margin: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+h1 {
+	font-size: 44px;
+}
+h2 {
+	font-size: 28px;
+}
+h5 {
+	font-size: 22px;
+}
+a, a:hover, a:active {
+	text-decoration: none;
+}
+a, button, input {
+	transition: all 0.5s ease;
+}
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active
+{
+	outline: none;
+}
+.container-fluid_plain {
+	padding: 0;
+}
+.btn {
+	margin: 0 auto;
+	font-size: 13px;
+	color: #fff;
+	border: 2px solid #e2512b;
+	background-color: #e2512b;
+	border-radius: 2px;
+	text-align: center;
+	display: block;
+	padding: 17px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.btn:hover {
+	background: #fff;
+	color: #e2512b;
+}
+.btn:focus {
+	box-shadow: none;
+}
+
+/* ------ Первый экран ------ */
+
+.header {
+	background: url(../img/chinatown.png) no-repeat center top / cover;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 242px;
+}
+.nav-wrap {
+	border-bottom: 1px solid rgba(254, 255, 255, 0.5);
+	padding-bottom: 30px;
+	margin-bottom: 178px;
+}
+.logo {
+	color: #626fe4;
+	font-weight: bold;
+	font-size: 29px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+.logo span {
+	color: #fff;
+	font-size: 30px;
+	font-weight: normal;
+}
+.menu {
+	margin-top: 15px;
+}
+.menu__item {
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.menu__item a {
+	color: #fff;
+	padding: 0 35px;
+	padding-bottom: 39px;
+}
+.menu__item:first-child a {
+	padding-left: 0px;
+}
+.menu__item:last-child a {
+	padding-right: 0px;
+}
+.menu__item a:hover {
+	border-bottom: 3px solid;
+}
+.offer {
+	text-align: center;
+}
+.offer__title {
+	color: #fff;
+	margin-bottom: 35px;
+	letter-spacing: 0.02em;
+}
+.offer__btn {
+	width: 200px;
+	padding: 12px;
+}
+.offer__text {
+	font-size: 22px;
+	line-height: 1.5em;
+	margin-bottom: 28px;
+}
+
+
+/* ------ Второй экран ------ */
+
+.features {
+	padding: 121px 0 47px;
+}
+.feature {
+	text-align: center;
+}
+.feature__letter {
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 27px 0 22px;
+}
+.feature__text {
+	font-size: 14px;
+	padding: 0px 20px 62px 20px;
+
+}
+
+/* ------ Третий экран ------ */
+
+.projects {
+	padding-bottom: 106px;
+}
+.works {
+	position: relative;
+	margin: 0 13px 25px 0;
+	width: 100%;
+}
+.works a {
+    text-decoration: none;
+    color: #fff;
+}
+.works__img {
+	width: 100%;
+}
+.works__overlay {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 69, 69, 0.90);
+    transition: all 0.3s ease;
+    flex-direction: column;
+    text-align: center;
+}
+.works__overlay p {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+	font-size: 14px;
+	font-weight: bold;
+    color: #fff;
+}
+.works__overlay span {
+    color: #fff;
+}
+.works:hover .works__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------ Червёртый экран ------ */
+
+.developers {
+	padding: 111px 0 105px 0;
+	background-color: #f1f2fd;
+}
+.cards {
+	position: relative;
+	margin:	13px 0;
+}
+.cards__letter h5 {
+	text-transform: none;
+	margin-top: 25px;
+	margin-bottom: 8px;
+}
+.cards__letter h6 {
+	color: #e84545;
+	font-weight: normal;
+	font-size: 13px;
+	margin-bottom: 23px;
+}
+.cards__letter p {
+	line-height: 1.5em;
+	width: 270px;
+	margin-bottom: 25px;
+}
+.cards__letter a {
+    text-decoration: none;
+	color: #c6cacc;
+}
+.social {
+	width: 40px;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #e8ecee;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	margin-right: 5px;
+}
+
+/* ------ Пятый экран ------ */
+
+.workspace {
+	background: url('../img/Layer19.png') no-repeat 100% 50% / cover;
+	height: 500px;
+}
+.true {
+	background: #53354a;
+	color: #fff;
+	padding-left: 75px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.true__title {
+	color: #fff;
+	font-size: 36px;
+	font-style: italic;
+	line-height: 1.2em;
+	margin-bottom: 25px;
+}
+.true__text {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.true__btn {
+	color: #e2512b;
+	border: 2px solid #e2512b;
+}
+.true__btn:hover {
+	background: #e2512b;
+	color: #fff;
+}
+
+/* ------ Шестой экран ------ */
+
+.download {
+	padding: 93px 0 98px 0;
+}
+.download h2 {
+	text-transform: none;
+	margin-bottom: 10px;
+}
+.download_text {
+	text-transform: uppercase;
+	margin-bottom: 38px;
+	font-size: 13px;
+}
+.download__btn {
+	width: 280px;
+	padding: 12px;
+}
+.footer {
+	padding: 83px 0 75px 0;
+	background-color: #3a3e64;
+	font-size: 14px;
+	color: #9d9fb2;
+	border-bottom: 12px solid #313454;
+}
+.footer h6 {
+	color: #fff;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+.footer span:first-child {
+	color: #6d6e79;
+}
+.footer span:last-child {
+	color: #fff;
+}
+/* Media Queries */
+
+/* 992 px - 1200px */
+@media screen and (max-width: 1200px) {
+.true {
+	/* padding-left: 25px; */
+}
+.true__title {
+	font-size: 26px;
+	width: 80%;
+}
+.workspace {
+	background: url('../img/Layer19.png') no-repeat 75% 50% / cover;
+}
+}
+/* 768 - 992 px */
+@media screen and (max-width: 992px) {
+	.logo {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.menu {
+		margin-top: 30px;
+	}
+	.phone {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.offer__title {
+		line-height: 1.3em;
+	}
+	.feature {
+		margin-bottom: 90px;
+	}
+	.features {
+		padding-bottom: 23px;
+	}
+	.true {
+		padding-left: 42px;
+	}
+	.true__title {
+		font-size: 20px;
+	}
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 768px) {
+	.cards {
+		text-align: center;
+	}
+	.cards__letter p {
+		width: 100%;
+	}
+	.cards__social {
+		justify-content: center;
+	}
+	.footer-info {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.footer {
+		padding-bottom: 60px;
+	}
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 576px) {
+	.menu {
+		flex-direction: column;
+	}
+	.menu__item {
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
+	.offer__title {
+		font-size: 35px;
+	}
+	.true__title {
+   		width: 80%;
+	}
+	.true__text {
+		width: 80%;
+ }
+}
