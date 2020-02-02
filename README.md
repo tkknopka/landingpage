@@ -1,2 +1,3 @@
-# landingpage.github.io
+# landingpage
 Небольшой лендинг
+https://tkknopka.github.io/landingpage/
